@@ -1,0 +1,30 @@
+{
+    "name": "doctrine/sql-commenter",
+    "type": "library",
+    "homepage": "https://www.doctrine-project.org/projects/sql-commenter.html",
+    "license": "MIT",
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "doctrine/dbal": "^3.0"
+    },
+    "require-dev": {
+        "doctrine/coding-standard": "8.2.0",
+        "phpstan/phpstan": "0.12.57",
+        "phpstan/phpstan-strict-rules": "^0.12.2",
+        "phpunit/phpunit": "9.5.0",
+        "psalm/plugin-phpunit": "0.13.0",
+        "vimeo/psalm": "4.3.2"
+    },
+    "config": {
+        "platform": {
+            "php": "7.3.0"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": { "Doctrine\\SQLCommenter\\": "src" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Doctrine\\SQLCommenter\\Tests\\": "tests" }
+    }
+}
